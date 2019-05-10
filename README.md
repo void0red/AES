@@ -1,3 +1,3 @@
-aes with gui
-//todo
-cfb ofb mode
+# aes with gui
+## todo
+- cfb and ofb mode
