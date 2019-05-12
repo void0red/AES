@@ -6,7 +6,7 @@
 #define AES_GUI_AES_H
 
 #include <stdlib.h>
-#include <unitypes.h>
+#include <stdint.h>
 #include <string.h>
 
 typedef enum padding_method {
