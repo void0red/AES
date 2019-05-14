@@ -30,7 +30,7 @@ void MainWindow::EncodeButton()
 {
     if(input.length() <= 0|| key.length() <= 0)
         return;
-    if(key.length() < 16){
+    if(key.length() != 16){
         QMessageBox::critical(this, "Warning", "key的长度必须是16字节", QMessageBox::Yes);
         return;
     }
@@ -42,7 +42,7 @@ void MainWindow::DecodeButton()
 {
     if(input.length() <= 0|| key.length() <= 0)
         return;
-    if(key.length() < 16){
+    if(key.length() != 16){
         QMessageBox::critical(this, "Warning", "key的长度必须是16字节", QMessageBox::Yes);
         return;
     }
