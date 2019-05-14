@@ -8,7 +8,4 @@ include_directories(include)
 add_library(aes src/aes.c)
 
 link_libraries(aes)
-
-add_executable(AES_gui main.cpp)
-
-target_link_libraries(AES_gui aes)
+set(LIBRARY_OUTPUT_PATH ../lib)

@@ -36,12 +36,12 @@ typedef struct _aes_ctx {
     int round;
 } aes_ctx;
 
-uint8_t *aes_encode(uint8_t *in, uint32_t in_size,
+extern "C" uint8_t *aes_encode(uint8_t *in, uint32_t in_size,
                     uint8_t *key, uint32_t key_size,
                     uint32_t *out_size, uint8_t *iv,
                     padding_method padding, packet_method packet);
 
-uint8_t *aes_decode(uint8_t *in, uint32_t in_size,
+extern "C" uint8_t *aes_decode(uint8_t *in, uint32_t in_size,
                     uint8_t *key, uint32_t key_size,
                     uint32_t *out_size, uint8_t *iv,
                     packet_method packet);
